@@ -105,13 +105,13 @@ iniciarBotao.addEventListener('click', () => jogar());
 
 function jogar() {
     if (!intervalo) {
-        iniciarBotao.textContent = 'Parar';
+        iniciarBotao.textContent = 'Stop';
         iniciarBotao.className = 'parar'
         intervalo = setInterval(proximaGeracao, 800);
         return;
     }
     iniciarBotao.className = 'iniciar'
-    iniciarBotao.textContent = 'Iniciar';
+    iniciarBotao.textContent = 'Start';
     clearInterval(intervalo);
     intervalo = null;
 }
