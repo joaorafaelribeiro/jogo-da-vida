@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#grade {
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 2px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+button.iniciar {
+    background-color: #4CAF50;
+    color: #ddd;
+}
+
+button.parar {
+    background-color: brown;
+    color: #ddd;
+}
+
+.regras {
+    border: 1px solid khaki;
+    background-color: khaki;
+    color:darkgoldenrod;
+    padding: 1em;
+    border-radius: 1em;
+    width: 50vh;
+    margin: 1em auto;
+}
+.regras li {
+    text-align: left;
+}
+
+.celula {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    align-content: center;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.celula.viva {
+    background-color: #4CAF50;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

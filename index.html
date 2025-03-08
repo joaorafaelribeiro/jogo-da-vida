@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Vida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Jogo da Vida</h1>
+    <article class="regras">
+    <h3>Regras do Jogo da Vida:</h3>
+    <ul>
+        <li>Cada célula pode estar viva ou morta.  </li>
+        <li>Qualquer célula viva com menos de 2 vizinhos vivos morre (solidão).</li>
+        <li>Qualquer célula viva com 2 ou 3 vizinhos vivos sobrevive.</li>
+        <li>Qualquer célula viva com mais de 3 vizinhos vivos morre (superpopulação).</li>
+        <li>Qualquer célula morta com exatamente 3 vizinhos vivos se torna viva (reprodução).  </li>
+    </ul>
+    </article>
+    <section>
+        Quantidade de Epocas: <span id="score">0</span></p>
+    </section>
+    <div id="grade"></div>
+    <button id="iniciar" class="iniciar">Iniciar</button>
+    <button id="resetar">Resetar</button>
+    <script src="script.js"></script>
+</body>
+</html>
